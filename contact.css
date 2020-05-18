@@ -1,0 +1,134 @@
+* { /*Everything here is effected for the whole webpage*/
+    /*Reset for margin and padding*/
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif; 
+    color: darkgrey; 
+
+    /*Gradient background color*/
+    background-image: linear-gradient(#181818, #434343);
+    background-attachment: fixed; /*everything is fixed with a single attachment*/
+}
+
+h2 {
+    color: white;
+}
+
+.container {
+    max-width: 960px; /*The size for default responsive*/ 
+    width: 96%; /*percentage for responsiveness*/
+    margin: auto; 
+}
+
+header {
+    background: #181818;
+    margin-bottom: 20px;
+    overflow: hidden; /*ANYTHING MORE THAN THE LIMIT WILL BE HIDDEN*/
+}
+
+.logo { /* Logo Lol*/
+    float: left;
+    margin-top: 10px;
+}
+
+nav { 
+    float: right; /*Navigation bar to be floated on the right*/
+    line-height: 70px;  
+}
+
+nav li {
+    display: inline-block; /*doesn't line break and instead put it to the side*/
+    padding: 5px/*top and bottom*/ 20px/*right and left*/;
+    margin-left: 10px;
+    line-height: normal;
+}
+
+.content h2 {
+
+    /*gradient goes from left to right*/
+    background-image: linear-gradient(to right,#240b36, #c31432) ;
+    padding: 10px;
+    border-radius: 5px; 
+    margin-bottom: 20px;
+}
+
+.content article {
+    float: left;
+    width: 600px; /*width of the article*/
+}
+
+.content ul {
+    float: right; /*floats the unordred list to the right*/
+    width: 250px;
+    background: #338989;
+    padding: 20px;
+    border-radius: 5px;
+    border: black solid 5px;
+    list-style: circle; /*List style of cirle in list*/
+}
+
+.content ul li {
+    color: #ffffff;
+    margin-bottom: 5px; 
+    background: #338989 ;   
+    
+}
+
+nav li:hover {
+    border: 1px #ED5565 solid;
+}
+
+.buttonclass {
+    background-color: #c31432;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    line-height: 40px;
+    box-shadow: 0px 8px 16px rgba(187, 21, 21, 0.774);
+}
+
+.dropdown-content a {
+    color: lightcoral;
+    padding: 5px 12px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block; /*becomes block type*/
+
+}
+
+.buttonclass:hover, .dropdown-content a:hover { /*button and its content
+    when they are hovered, they have a border of the below properties*/
+    transition: 0.3s;
+    opacity: 0.6;
+}
+
+
+footer p{
+    
+    padding: 20px;
+    margin-top: 500px;
+    color: #ffffff;
+    background-image: linear-gradient(to left, #8E0E00,#1F1C18);
+    text-align: center;
+}
+
